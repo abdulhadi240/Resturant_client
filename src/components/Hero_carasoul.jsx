@@ -2,9 +2,10 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const Hero_carousel = () => {
+const Hero_carasoul = () => {
   return (
-    <Carousel showArrows={true}>
+    <div>
+      <Carousel showArrows={true}>
       <div>
         <img src="/hero1.jpg" />
         <p className="legend">Legend 1</p>
@@ -34,7 +35,10 @@ const Hero_carousel = () => {
         <p className="legend">Legend 7</p>
       </div>
     </Carousel>
-  );
-};
+    </div>
+  )
+}
 
-export default Hero_carousel;
+export default Hero_carasoul
+
+

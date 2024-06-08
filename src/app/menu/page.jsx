@@ -29,17 +29,13 @@ const Page = () => {
       <div className="flex justify-center mt-10">
         <div className="grid grid-cols-5 gap-4">
           {categories.map((item, index) => (
-            <motion.div
+            <div
               key={index}
               onClick={() => getProduct(item.title)}
               className="text-secondary-normal border-[1px] p-2 border-secondary-normal text-center rounded-md hover:bg-secondary-normal hover:text-primary font-semibold cursor-pointer"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
             >
               {item.title}
-            </motion.div>
+            </div>
           ))}
         </div>
             
