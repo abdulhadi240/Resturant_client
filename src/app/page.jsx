@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Home_book from "@/components/Home_book";
 import Frame_hero from "@/components/Frame_hero";
-import Hero_carasoul from '@/components/Hero_carasoul'
 
 export default function Home() {
   return (
@@ -9,7 +8,6 @@ export default function Home() {
       
       <div className="">
         <Frame_hero>
-          <Hero_carasoul/>
         </Frame_hero>
         <Home_book
           heading="BOOK A TABLE"
@@ -27,7 +25,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex justify-center text-3xl font-semibold tracking-widest uppercase text-secondary-normal">
+      <div className="flex justify-center text-3xl font-semibold tracking-widest text-center uppercase text-secondary-normal">
         <h1>FOLLOW US ON INSTAGRAM</h1>
       </div>
     </>

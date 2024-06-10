@@ -65,7 +65,7 @@ const Navbar = () => {
         <div className="flex justify-center">
             <Image src={'/logo.png'} height={200} width={200} alt="logo" className="flex justify-center"/>
         </div>
-        <div className="relative z-10 flex justify-between px-6 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
+        <div className="relative hidden  z-10 lg:flex justify-between px-6 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
             {menu.map((items, index) => (
               <div
                 key={index}
