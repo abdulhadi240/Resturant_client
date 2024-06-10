@@ -14,14 +14,14 @@ export default function Home() {
         <Home_book
           heading="BOOK A TABLE"
           paragraph="We would love to have you as our guest!"
-          image="/seating.jpg"
+          image="/seating.webp"
           button_text="Reservation"
           reversed={true}
         />
         <Home_book
           heading="NEED A GIFT?"
           paragraph="Looking for the perfect gift for a food lover in your life?"
-          image="/seating.jpg"
+          image="/seating.webp"
           button_text="Gift cards"
           reversed={false}
         />

@@ -5,31 +5,84 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Hero_carasoul = () => {
   return (
-    <div>
-      <Carousel showArrows={true} infiniteLoop dynamicHeight={false} autoPlay showIndicators={false}  interval={3000} showThumbs={false} showStatus={false} showArrows={false}>
-      <div>
-        <img src="/hero1.jpg" />
-      </div>
-      <div>
-        <img src="/hero2.jpg" />
-      </div>
-      <div>
-        <img src="/hero3.jpg" />
-      </div>
-      <div>
-        <img src="/hero4.jpg" />
-      </div>
-      <div>
-        <img src="/hero5.jpg" />
-      </div>
-      <div>
-        <img src="/hero6.jpg" />
-      </div>
-      <div>
-        <img src="/hero7.jpg" />
-      </div>
-    </Carousel>
-    </div>
+    <div className="relative text-white text-[20px] w-full max-w-[1660px] ">
+         <Carousel
+             autoPlay={true}
+             infiniteLoop={true}
+             showThumbs={false}
+             showIndicators={false}
+             showStatus={false}
+             
+         >
+             <div>
+                 <img
+                     src="/hero1.webp"
+                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     alt='image'
+                 />
+                 
+             </div>
+             <div>
+                 <img
+                     src="/hero2.webp"
+                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     alt='image'
+                 />
+                 
+             </div>
+             <div>
+                 <img
+                     src="/hero3.webp"
+                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     alt='image'
+                 />
+                 
+             </div>
+             <div>
+                 <img
+                     src="/hero4.webp"
+                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     alt='image'
+                 />
+                 
+             </div>
+             <div>
+                 <img
+                     src="/hero5.webp"
+                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     alt='image'
+                 />
+                 
+             </div>
+
+             <div>
+                 <img
+                     src="/hero6.webp"
+                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     alt='image'
+                 />
+                 
+             </div>
+
+             <div>
+                 <img
+                     src="/hero7.webp"
+                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     alt='image'
+                 />
+                 
+             </div>
+
+              <div>
+                 <img
+                     src="/hero8.webp"
+                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     alt='image'
+                 />
+                 
+             </div>
+         </Carousel>
+         </div>
   )
 }
 
