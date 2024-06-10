@@ -10,7 +10,7 @@ export default function Home() {
         <Frame_hero>
         </Frame_hero>
         <Home_book
-          heading="BOOK A TABLE"
+          heading="BOOK  TABLE"
           paragraph="We would love to have you as our guest!"
           image="/seating.webp"
           button_text="Reservation"

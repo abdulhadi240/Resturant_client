@@ -65,7 +65,7 @@ const Frame_hero = ({ image, children }) => {
   return (
     <div className='z-50 overflow-hidden shadow-custom-tall'>
       <div>
-        <div className='lg:hidden'> 
+        <div className='mb-10 lg:hidden'> 
           <Image src={'/logo.png'} width={150} height={150} alt='logo'/>
         </div>
         <div>

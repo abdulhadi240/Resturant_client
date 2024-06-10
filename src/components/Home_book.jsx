@@ -15,7 +15,7 @@ const Home_book = ({ reversed, image, heading, paragraph, button_text }) => {
               alt='frame' 
               className='w-full sm:w-[650px] h-auto' // Responsive size for frame
             />
-            <div className="absolute flex flex-col items-center justify-center gap-2 text-center transform -translate-x-1/2 -translate-y-1/2 sm:p-4 left-1/2 top-1/2 text-secondary-normal">
+            <div className="absolute flex flex-col items-center justify-center gap-2 text-center transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 text-secondary-normal">
               <h1 className="w-full mb-4 text-2xl">{heading}</h1>
               <p className="hidden mb-4 sm:block">{paragraph}</p>
               <button className="px-4 py-2 uppercase bg-transparent border-[1px] border-secondary-normal font-semibold transition-all hover:transition-colors rounded text-secondary-normal hover:bg-secondary-dark hover:text-primary">{button_text}</button>
@@ -33,7 +33,7 @@ const Home_book = ({ reversed, image, heading, paragraph, button_text }) => {
               alt='frame' 
               className='w-full sm:w-[650px] h-auto' // Responsive size for frame
             />
-            <div className="absolute flex flex-col items-center justify-center gap-2 p-4 text-center transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 text-secondary-normal">
+            <div className="absolute flex flex-col items-center justify-center gap-2 text-center transform -translate-x-1/2 -translate-y-1/2 sm:p-2 left-1/2 top-1/2 text-secondary-normal">
               <h1 className="w-full mb-4 text-2xl">{heading}</h1>
               <p className="hidden mb-4 sm:block">{paragraph}</p>
               <button className="px-4 py-2 uppercase bg-transparent border-[1px] border-secondary-normal font-semibold transition-all hover:transition-colors rounded text-secondary-normal hover:bg-secondary-dark hover:text-primary">{button_text}</button>
