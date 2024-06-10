@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Home_book from "@/components/Home_book";
 import Frame_hero from "@/components/Frame_hero";
+import Hero_carasoul from '@/components/Hero_carasoul'
 
 export default function Home() {
   return (
     <>
       
       <div className="">
-        <Frame_hero></Frame_hero>
+        <Frame_hero>
+          <Hero_carasoul/>
+        </Frame_hero>
         <Home_book
           heading="BOOK A TABLE"
           paragraph="We would love to have you as our guest!"
