@@ -13,7 +13,7 @@ const page = () => {
       <Frame_hero/>
       <div>
         <h1 className='flex justify-center mt-10 mb-10 text-5xl text-secondary-normal'>BOOK AN EVENT</h1>
-        <p className='px-32 text-center text-secondary-normal'>For all inquiries, please fill out the form below and we’ll be in touch soon. 
+        <p className='px-6 text-center lg:px-32 sm:px-16 text-secondary-normal'>For all inquiries, please fill out the form below and we’ll be in touch soon. 
           <br /><br />
           Elegantly designed to complement the restaurant, Francie's Private Dining Room, "The Vault at Francie," seats up to 12 persons MAXIMUM and is available for dinner, Monday through Saturday.
           <br /><br />
@@ -46,7 +46,7 @@ const page = () => {
           <div 
             className={`absolute top-0 left-0  ${hovered ? 'bg-green-500 opacity-50' : 'hidden'}`} 
           />
-          <Image src="/private_dining.jpg" alt="vault" width={500} height={500} className=''/>
+          <Image src="/private_dining.webp" alt="vault" width={500} height={500} className=''/>
         </div>
       </div>
     </div>
