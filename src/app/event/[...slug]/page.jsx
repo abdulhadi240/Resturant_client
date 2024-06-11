@@ -13,15 +13,15 @@ const page = async ({ params }) => {
       <div className="text-secondary-normal">
         <Navbar />
       </div>
-      <div className="flex justify-between gap-10 mx-20 mt-20 ">
-        <div className="flex flex-col gap-6 left w-[50%]">
-          <div className="upper">
+      <div className="flex flex-col justify-between gap-10 mt-20 lg:mx-20 lg:flex-row ">
+        <div className="flex flex-col gap-6 left ">
+          <div className="flex w-full lg:justify-start sm:justify-center upper">
             <Image
               src={builder.image(data[0]?.tags[0]?.image).url()}
               width={500}
               height={500}
               alt="images"
-              className="rounded-md"
+              className="flex justify-center rounded-lg"
             />
           </div>
           <div className="flex flex-col gap-3 text-center lower">

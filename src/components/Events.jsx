@@ -9,7 +9,7 @@ const Events = async () => {
   const event = await GetEvent();
   console.log(event);
   return (
-    <div className="grid justify-center grid-cols-2">
+    <div className="grid justify-center grid-cols-1 gap-4 lg:grid-cols-2 ">
       {event.map((data, index) => {
         return (
           <Link href={`/event/${data?._id}`}><div key={index} className="group border-secondary-normal border-[2px] overflow-hidden">
@@ -20,7 +20,7 @@ const Events = async () => {
               height={500}
               className="transition-all duration-150 group-hover:scale-110"
             />
-            <div className="flex flex-col justify-center gap-3 mt-10 text-center text-secondary-normal ">
+            <div className="flex flex-col justify-center gap-3 mt-10 mb-4 text-center text-secondary-normal ">
               <h1 className="text-xl font-bold">{data.title}</h1>
               <p className="font-semi-bold">{data.timing}</p>
               <p className="font-semi-bold">{data.subtitle}</p>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Home_book from "@/components/Home_book";
 import Frame_hero from "@/components/Frame_hero";
+import YouTube from "@/components/Youtube";
 
 export default function Home() {
   return (
@@ -25,8 +26,11 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex justify-center text-3xl font-semibold tracking-widest text-center uppercase text-secondary-normal">
+      <div className="flex justify-center mt-20 mb-10 text-3xl font-semibold tracking-widest text-center uppercase text-secondary-normal">
         <h1>FOLLOW US ON INSTAGRAM</h1>
+      </div>
+      <div className="">
+      <YouTube url="https://www.youtube.com/watch?v=LQdfE66rAwc" />
       </div>
     </>
   );

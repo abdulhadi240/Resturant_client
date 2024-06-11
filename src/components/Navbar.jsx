@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-const menu = [
+import MobileMenu from "./MobileMenu";
+export const menu = [
   {
     name: "Home",
     link: "/",
@@ -61,10 +62,12 @@ const menu = [
 
 const Navbar = () => {
   return (
-    <div>
-        <div className="flex justify-center">
-            <Image src={'/logo.png'} height={200} width={200} alt="logo" className="flex justify-center"/>
+    <div className="shadow-lg bg-primary shadow-primary">
+        <div className="flex items-center justify-between mt-2 lg:justify-center">
+            <Image src={'/logo.png'} height={150} width={150} alt="logo" className="justify-center hidden lg:flex"/>
+            
         </div>
+       
         <div className="relative hidden  z-10 lg:flex justify-between px-6 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
             {menu.map((items, index) => (
               <div
