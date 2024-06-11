@@ -1,6 +1,8 @@
-import Map from "@/components/Map";
 import Navbar from "@/components/Navbar";
 import React from "react";
+import dynamic from 'next/dynamic';
+
+
 
 const page = () => {
   return (
@@ -36,8 +38,8 @@ const page = () => {
             </p>
         </div>
       </div>
-      <div className="overflow-hidden sm:mx-10">
-        <Map/>
+      <div className="mt-10 overflow-hidden rounded-xl sm:mx-10">
+        {/*<Map/>*/}
       </div>
 
     </>
