@@ -8,12 +8,12 @@ const page = () => {
       <div>
         <Navbar />
       </div>
-      <div className="flex justify-between mx-10 mt-20 text-secondary-normal">
+      <div className="flex flex-col justify-between mx-5 mt-20 lg:mx-10 lg:flex-row text-secondary-normal">
         <div className="text-center text-secondary-normal ">
             <h1 className="mb-4 text-4xl font-bold text-secondary-normal">HOURS & LOCATION</h1>
             <p>136 Broadway,<br />Brooklyn, NY 11249 <br /> 718-218-7572 <br /> info@franciebrooklyn.com <br /> <br/> <span className="font-semibold">Dinner</span> <br /> Monday - Thursday <br /> 5:30 - 10:00pm <br /><br /><span className="font-semibold">Dinner </span><br />Friday - Saturday <br />5:00 - 10:30pm</p>
         </div>
-        <div className="w-[600px] text-center">
+        <div className="lg:w-[600px] flex justify-center text-center">
             <p>Need to know:
                 <br /><br /><br />
                 Francie takes reservations up to 30 days in advance.  We regret we are unable to take reservations by email, although if you are super sweet, you can try. You may book through the link on our website or call 718.218.7572
@@ -36,10 +36,10 @@ const page = () => {
             </p>
         </div>
       </div>
-      <div>
-        MAP
+      <div className="overflow-hidden sm:mx-10">
+        <Map/>
       </div>
-     {/* <Map/> */ }
+
     </>
   );
 };
