@@ -99,7 +99,7 @@ const EmblaCarasoul = (props) => {
                 <div className="embla__parallax__layer">
                   <img
                     className="embla__slide__img embla__parallax__img"
-                    src={`https://picsum.photos/600/350?v=${index}`}
+                    src={`/hero${index}.webp`}
                     alt="Your alt text"
                   />
                 </div>
@@ -116,5 +116,4 @@ const EmblaCarasoul = (props) => {
 }
 
 export default EmblaCarasoul
-import React from 'react'
 

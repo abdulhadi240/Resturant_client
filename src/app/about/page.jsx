@@ -1,18 +1,37 @@
-import Frame_hero from '@/components/Frame_hero'
-import React from 'react'
+import Frame_hero from "@/components/Frame_hero";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-        <Frame_hero image={'/about.jpg'}/>
-        <div>
-            <p className='items-center px-5 mt-10 tracking-wider text-center sm:px-10 lg:px-20 text-secondary-normal'>Michelin-starred Francie, after much delay, debuted in  December 2020, and is the first independent collaboration between Chef-Owner Christopher Cipollone (Piora, Cotogna) and Owner-Operator John Winterman (Bâtard, Daniel).  Francie is located on the corner of Broadway & Bedford in the heart of Williamsburg, Brooklyn, and has the convivial feel of a neighborhood brasserie. Located in a limestone-clad former bank building, Francie serves an approachable menu inspired by European flavors and designed for flexibility:  snacks, shellfish, and first courses, followed by handmade pastas and main courses.  Inspired choices include The Market Salad, Lobster Ravioli, Heritage Pork Chop, and Côte de Boeuf for Two.  Save room for the Cheese Cart. The timeless space, designed by architect Glen Coben, is brought together by the open kitchen, a focal point that beckons both neighbors and guests to the warmth of the dining room.</p>
-        </div>
-        <div>
-            <h1 className='mt-10 text-6xl font-bold tracking-widest text-center text-secondary-normal'>TEAM MEMBERS</h1>
-        </div>
-    </div>
-  )
-}
+      <Frame_hero image={"/about.jpg"} />
+      <div>
+        <span className="flex justify-center mt-10 text-lg font-bold text-secondary-normal">
+          WELCOME TO LAZIZ CATERING
+        </span>
+        <p className="items-center px-5 mt-10 tracking-wider text-center sm:px-10 lg:px-20 text-secondary-normal">
+          Welcome to Laziz Catering, your premier partner for exceptional
+          culinary experiences in the heart of Dubai. We are dedicated to
+          creating extraordinary events, whether intimate gatherings, lavish
+          weddings, or corporate functions, with a focus on excellence,
+          creativity, and unparalleled customer service. Our talented chefs
+          craft menus using the finest fresh ingredients, showcasing a fusion of
+          international flavors and local influences, tailored to your unique
+          vision, dietary preferences, and cultural nuances. From meticulous
+          menu planning to flawless on-site execution, we ensure a seamless and
+          memorable experience, delighting your guests with delectable dishes
+          and impeccable service{" "}
+        </p>
+      </div>
+      <div>
+        <h1 className="mt-10 text-6xl font-bold tracking-widest text-center text-secondary-normal">
+        MEET THE TEAM
+        </h1>
+        <p className="mt-3 text-xs text-center text-secondary-normal">Our dynamic team ensures every client's vision becomes a reality with precision and warm hospitality.</p>
 
-export default page
+      </div>
+    </div>
+  );
+};
+
+export default page;

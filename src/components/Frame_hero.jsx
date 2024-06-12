@@ -66,7 +66,8 @@ const Frame_hero = ({ image, children }) => {
   return (
     <div className='z-50 overflow-hidden shadow-custom-tall'>
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="z-10 justify-center hidden w-full py-2 text-xs text-center lg:flex sm:text-sm text-secondary-normal">
-        136 BROADWAY, BROOKLYN, NY 11249 718-218-7572
+      Bin Haider Ware house Complex, Jabel Ali, Dubai, UAE
+
       </motion.div>
       <div className="w-full h-[500px] overflow-hidden text-secondary-normal bg-transparent border-[1px] border-secondary-normal">
         <div className="mt-2 h-[480px]  overflow-hidden ml-[7px] w-[99%] relative text-secondary-normal bg-transparent border-[1px] border-secondary-normal shadow-inner-green">
@@ -88,7 +89,7 @@ const Frame_hero = ({ image, children }) => {
           </motion.div>
         ))}
           </div>
-          <div className="relative -mt-16 overflow-hidden -pb-10">
+          <div className="relative w-full h-full -mt-16 overflow-hidden -pb-10">
             {children}
           </div>
         </div>

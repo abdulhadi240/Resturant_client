@@ -2,6 +2,7 @@ import Image from "next/image";
 import Home_book from "@/components/Home_book";
 import Frame_hero from "@/components/Frame_hero";
 import YouTube from "@/components/Youtube";
+import Carasoul from "@/components/Carasoul";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       
       <div className="">
         <Frame_hero>
+          <Carasoul/>
         </Frame_hero>
         <Home_book
           heading="BOOK  TABLE"
