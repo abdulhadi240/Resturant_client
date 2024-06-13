@@ -69,8 +69,8 @@ const Frame_hero = ({ image, children }) => {
       Bin Haider Ware house Complex, Jabel Ali, Dubai, UAE
 
       </motion.div>
-      <div className="w-full h-[500px] overflow-hidden text-secondary-normal bg-transparent border-[1px] border-secondary-normal">
-        <div className="mt-2 h-[480px]  overflow-hidden ml-[7px] w-[99%] relative text-secondary-normal bg-transparent border-[1px] border-secondary-normal shadow-inner-green">
+      <div className="w-full h-[250px] sm:h-[500px] overflow-hidden text-secondary-normal bg-transparent border-[1px] border-secondary-normal">
+        <div className="mt-2 sm:h-[480px]  overflow-hidden ml-[7px] w-[99%] relative text-secondary-normal bg-transparent border-[1px] border-secondary-normal shadow-inner-green">
           <div className="relative hidden  z-10 lg:flex justify-between px-6 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
           {menu.map((items, index) => (
           <motion.div
@@ -89,7 +89,7 @@ const Frame_hero = ({ image, children }) => {
           </motion.div>
         ))}
           </div>
-          <div className="relative w-full h-full -mt-16 overflow-hidden -pb-10">
+          <div className="relative w-full h-full overflow-hidden lg:-mt-16 lg:-pb-10">
             {children}
           </div>
         </div>

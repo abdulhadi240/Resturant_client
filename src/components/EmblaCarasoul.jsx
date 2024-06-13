@@ -99,7 +99,7 @@ const EmblaCarasoul = (props) => {
                 <div className="embla__parallax__layer">
                   <img
                     className="embla__slide__img embla__parallax__img"
-                    src={`/hero${index}.webp`}
+                    src={`/${index}.webp`}
                     alt="Your alt text"
                   />
                 </div>
@@ -107,9 +107,6 @@ const EmblaCarasoul = (props) => {
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="embla__controls">
       </div>
     </div>
   )
