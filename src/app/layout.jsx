@@ -14,7 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
+      <div>
+
+      </div>
       <body className={inter.className}>
       <MobileMenu menu={menu}/>
         {children}</body>

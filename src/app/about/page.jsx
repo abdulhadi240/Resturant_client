@@ -4,7 +4,9 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Frame_hero image={"/about.jpg"} />
+      <Frame_hero image={"/about.webp"}>
+      <img src="/about.webp" className="w-full h-72" alt="" />
+      </Frame_hero>
       <div>
         <span className="flex justify-center mt-10 text-lg font-bold text-secondary-normal">
           WELCOME TO LAZIZ CATERING

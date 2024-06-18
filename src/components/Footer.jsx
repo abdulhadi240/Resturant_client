@@ -33,6 +33,7 @@ const menu = [
 export const Footer = () => {
   return (
     <div className="fixed bottom-0 items-center hidden w-full lg:block">
+      <div className="relative hidden  z-10 lg:flex justify-between px-6 py-10  text-secondary-normal bg-gradient-to-b from-[#0141370d] to-[#014137] shadow-custom-tall"/>
       <div className="flex justify-between px-10 bg-primary ">
         <div className="flex gap-2 mt-1">
         <div className="flex items-center justify-center w-6 h-6 text-center rounded-full facebook bg-secondary-normal">

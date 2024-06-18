@@ -3,6 +3,7 @@ import Home_book from "@/components/Home_book";
 import Frame_hero from "@/components/Frame_hero";
 import YouTube from "@/components/Youtube";
 import Carasoul from "@/components/Carasoul";
+import Hero_carasoul from "@/components/Hero_carasoul";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       
       <div className="">
         <Frame_hero>
-          <Carasoul/>
+          <Hero_carasoul/>
         </Frame_hero>
         <Home_book
           heading="BOOK  TABLE"

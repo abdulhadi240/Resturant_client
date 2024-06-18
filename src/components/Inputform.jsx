@@ -36,17 +36,23 @@ const Inputform = ({ data }) => {
 
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col gap-4 lower">
+      <form
+        action="https://formspree.io/f/mleqqpbl"
+        method="POST"
+        target="_blank"
+        className="flex flex-col gap-4 lower"
+      >
         <div className="flex justify-center">
-          <div className="flex flex-col">
+          <f className="flex flex-col">
             <h1 className="text-xs text-secondary-normal">Ticket Type*</h1>
             <input
               type="text"
               value={formData.title}
               disabled
-              className="font-bold text-center text-secondary-dark place-content-center"
+              required
+              className="font-bold text-center max-w-64 text-secondary-dark place-content-center"
             />
-          </div>
+          </f>
         </div>
         <div className="flex flex-col gap-3 lg:flex-row">
           <div className="flex justify-center">
@@ -58,7 +64,7 @@ const Inputform = ({ data }) => {
                 value={formData.firstName}
                 onChange={handleChange}
                 required
-                className="border-[1px] text-secondary-normal bg-primary max-w-80 rounded-lg place-content-center text-center"
+                className="border-[1px] text-secondary-normal bg-primary max-w-80 rounded-sm place-content-center text-center"
               />
             </div>
           </div>
@@ -71,7 +77,7 @@ const Inputform = ({ data }) => {
                 value={formData.lastName}
                 onChange={handleChange}
                 required
-                className="border-[1px] text-secondary-normal bg-primary max-w-80 rounded-lg  place-content-center text-center"
+                className="border-[1px] text-secondary-normal bg-primary max-w-80 rounded-sm  place-content-center text-center"
               />
             </div>
           </div>
@@ -86,7 +92,7 @@ const Inputform = ({ data }) => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="border-[1px] text-secondary-normal bg-primary max-w-80 rounded-lg  place-content-center text-center"
+                className="border-[1px] text-secondary-normal bg-primary max-w-80 rounded-sm  place-content-center text-center"
               />
             </div>
           </div>
@@ -99,7 +105,7 @@ const Inputform = ({ data }) => {
                 value={formData.phoneNumber}
                 onChange={handleChange}
                 required
-                className="border-[1px] text-secondary-normal bg-primary max-w-80 rounded-lg  place-content-center text-center"
+                className="border-[1px] text-secondary-normal bg-primary max-w-80 rounded-sm  place-content-center text-center"
               />
             </div>
           </div>
@@ -113,20 +119,21 @@ const Inputform = ({ data }) => {
             min="1"
             max={data.number}
             required
-            className="border-[1px] text-secondary-normal bg-primary max-w-96 rounded-lg  place-content-center text-center"
+            className="border-[1px] text-secondary-normal bg-primary max-w-96 rounded-sm  place-content-center text-center"
           />
         </div>
-        <div
+        <button
           className="uppercase border-[1px] border-secondary-normal p-2 hover:text-primary hover:bg-secondary-normal hover:border-primary hover:transition-all w-auto text-center items-center text-secondary-normal cursor-pointer"
           onClick={handleSubmit}
+          type="submit"
         >
           Confirm my seat
-        </div>
-        <div>
+        </button>
+        <div className="text-xs text-secondary-normal">
           This site is protected by reCAPTCHA and the Google Privacy Policy and
           Terms of Service apply.
         </div>
-      </div>
+      </form>
     </div>
   );
 };

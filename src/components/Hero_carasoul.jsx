@@ -12,11 +12,12 @@ const Hero_carasoul = () => {
              showThumbs={false}
              showIndicators={false}
              showStatus={false}
+             showArrows={false}
              
          >
              <div>
                  <img
-                     src="/hero1.webp"
+                     src="/1.webp"
                      className="aspect-[16/10] md:aspect-auto object-cover"
                      alt='image'
                  />
@@ -24,7 +25,7 @@ const Hero_carasoul = () => {
              </div>
              <div>
                  <img
-                     src="/hero2.webp"
+                     src="/2.webp"
                      className="aspect-[16/10] md:aspect-auto object-cover"
                      alt='image'
                  />
@@ -32,7 +33,7 @@ const Hero_carasoul = () => {
              </div>
              <div>
                  <img
-                     src="/hero3.webp"
+                     src="/3.webp"
                      className="aspect-[16/10] md:aspect-auto object-cover"
                      alt='image'
                  />
@@ -40,7 +41,7 @@ const Hero_carasoul = () => {
              </div>
              <div>
                  <img
-                     src="/hero4.webp"
+                     src="/4.webp"
                      className="aspect-[16/10] md:aspect-auto object-cover"
                      alt='image'
                  />
@@ -48,7 +49,7 @@ const Hero_carasoul = () => {
              </div>
              <div>
                  <img
-                     src="/hero5.webp"
+                     src="/5.webp"
                      className="aspect-[16/10] md:aspect-auto object-cover"
                      alt='image'
                  />
@@ -57,7 +58,7 @@ const Hero_carasoul = () => {
 
              <div>
                  <img
-                     src="/hero6.webp"
+                     src="/6.webp"
                      className="aspect-[16/10] md:aspect-auto object-cover"
                      alt='image'
                  />
@@ -66,16 +67,7 @@ const Hero_carasoul = () => {
 
              <div>
                  <img
-                     src="/hero7.webp"
-                     className="aspect-[16/10] md:aspect-auto object-cover"
-                     alt='image'
-                 />
-                 
-             </div>
-
-              <div>
-                 <img
-                     src="/hero8.webp"
+                     src="/0.webp"
                      className="aspect-[16/10] md:aspect-auto object-cover"
                      alt='image'
                  />

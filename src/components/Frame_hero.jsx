@@ -62,7 +62,7 @@ const menu = [
   },
 ];
 
-const Frame_hero = ({ image, children }) => {
+const Frame_hero = ({ children ,Image }) => {
   return (
     <div className='z-50 overflow-hidden shadow-custom-tall'>
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="z-10 justify-center hidden w-full py-2 text-xs text-center lg:flex sm:text-sm text-secondary-normal">
