@@ -1,7 +1,8 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import MobileMenu from "./MobileMenu";
+import { motion } from "framer-motion";
 export const menu = [
   {
     name: "Home",
@@ -70,17 +71,20 @@ const Navbar = () => {
        
         <div className="relative hidden  z-10 lg:flex justify-between px-6 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
             {menu.map((items, index) => (
-              <div
-                key={index}
-                className={`${items.design ? "border-[1px] border-secondary-normal px-5 p-1 ml-3" : "ml-4 mt-[5px]"}`}
+              <motion.div
+              key={index}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              className={`${items.design ? "border-[1px] border-secondary-normal px-5 p-1 ml-3" : "ml-4 mt-[5px]"}`}
+            >
+              <Link
+                href={items.link}
+                className="font-semibold uppercase hover:text-secondary-dark"
               >
-                <Link
-                  href={items.link}
-                  className="font-semibold uppercase hover:text-secondary-dark"
-                >
-                  {items.name}
-                </Link>
-              </div>
+                {items.name}
+              </Link>
+            </motion.div>
             ))}
           </div>
       
