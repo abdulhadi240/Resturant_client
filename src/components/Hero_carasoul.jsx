@@ -18,7 +18,7 @@ const Hero_carasoul = () => {
              <div>
                  <img
                      src="/1.webp"
-                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
                  
@@ -26,7 +26,7 @@ const Hero_carasoul = () => {
              <div>
                  <img
                      src="/2.webp"
-                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
                  
@@ -34,7 +34,7 @@ const Hero_carasoul = () => {
              <div>
                  <img
                      src="/3.webp"
-                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
                  
@@ -42,7 +42,7 @@ const Hero_carasoul = () => {
              <div>
                  <img
                      src="/4.webp"
-                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
                  
@@ -50,7 +50,7 @@ const Hero_carasoul = () => {
              <div>
                  <img
                      src="/5.webp"
-                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
                  
@@ -59,7 +59,7 @@ const Hero_carasoul = () => {
              <div>
                  <img
                      src="/6.webp"
-                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
                  
@@ -68,7 +68,7 @@ const Hero_carasoul = () => {
              <div>
                  <img
                      src="/0.webp"
-                     className="aspect-[16/10] md:aspect-auto object-cover"
+                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
                  

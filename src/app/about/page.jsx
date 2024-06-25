@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div>
       <Frame_hero image={"/about.webp"}>
-      <img src="/about.webp" className="w-full h-72" alt="" />
+      <img src="/about.webp" className="object-cover w-full h-full" alt=""/>
       </Frame_hero>
       <div>
         <span className="flex justify-center mt-10 text-lg font-bold text-secondary-normal">

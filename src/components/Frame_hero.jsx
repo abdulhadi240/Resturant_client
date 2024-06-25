@@ -21,18 +21,8 @@ const menu = [
     design: false,
   },
   {
-    name: "Ticketed Events",
-    link: "/event",
-    design: false,
-  },
-  {
     name: "About",
     link: "/about",
-    design: false,
-  },
-  {
-    name: "Team",
-    link: "/team",
     design: false,
   },
   {
@@ -43,16 +33,6 @@ const menu = [
   {
     name: "Gallery",
     link: "/gallery",
-    design: false,
-  },
-  {
-    name: "Private Dining",
-    link: "/private",
-    design: false,
-  },
-  {
-    name: "Gift Cards",
-    link: "/gift",
     design: false,
   },
   {
@@ -71,7 +51,7 @@ const Frame_hero = ({ children ,Image }) => {
       </motion.div>
       <div className="w-full h-[250px] sm:h-[500px] overflow-hidden text-secondary-normal bg-transparent border-[1px] border-secondary-normal">
         <div className="mt-2 sm:h-[480px]  overflow-hidden ml-[7px] w-[99%] relative text-secondary-normal bg-transparent border-[1px] border-secondary-normal shadow-inner-green">
-          <div className="relative hidden  z-10 lg:flex justify-between px-6 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
+          <div className="relative hidden  z-10 lg:flex justify-between px-20 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
           {menu.map((items, index) => (
           <motion.div
             key={index}
