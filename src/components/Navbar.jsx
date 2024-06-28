@@ -25,6 +25,7 @@ export const menu = [
     link: "/about",
     design: false,
   },
+  
   {
     name: "Need To Know",
     link: "/location",
@@ -35,6 +36,7 @@ export const menu = [
     link: "/gallery",
     design: false,
   },
+ 
   {
     name: "Reservation",
     link: "/reservation",
@@ -50,7 +52,7 @@ const Navbar = () => {
             
         </div>
        
-        <div className="relative hidden  z-10 lg:flex justify-between px-20 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
+        <div className="relative hidden  z-10 lg:flex justify-between px-6 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
             {menu.map((items, index) => (
               <motion.div
               key={index}

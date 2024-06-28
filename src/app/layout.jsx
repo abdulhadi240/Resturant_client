@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         {children}</body>
       <div className="mt-64">
       <FooterMobile/>
-      <Footer/>
+      
       </div>
     </html>
   );

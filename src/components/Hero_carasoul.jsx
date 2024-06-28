@@ -17,7 +17,7 @@ const Hero_carasoul = () => {
          >
              <div>
                  <img
-                     src="/1.webp"
+                     src="/p1.webp"
                      className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
@@ -25,7 +25,7 @@ const Hero_carasoul = () => {
              </div>
              <div>
                  <img
-                     src="/2.webp"
+                     src="/indian.jpg"
                      className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
@@ -33,7 +33,7 @@ const Hero_carasoul = () => {
              </div>
              <div>
                  <img
-                     src="/3.webp"
+                     src="/biryani.jpg"
                      className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
@@ -41,7 +41,7 @@ const Hero_carasoul = () => {
              </div>
              <div>
                  <img
-                     src="/4.webp"
+                     src="/indian.jpg"
                      className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
@@ -49,16 +49,7 @@ const Hero_carasoul = () => {
              </div>
              <div>
                  <img
-                     src="/5.webp"
-                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
-                     alt='image'
-                 />
-                 
-             </div>
-
-             <div>
-                 <img
-                     src="/6.webp"
+                     src="/i1.jpeg"
                      className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />
@@ -67,7 +58,16 @@ const Hero_carasoul = () => {
 
              <div>
                  <img
-                     src="/0.webp"
+                     src="/bbq.avif"
+                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
+                     alt='image'
+                 />
+                 
+             </div>
+
+             <div>
+                 <img
+                     src="/pilau.jfif"
                      className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
                      alt='image'
                  />

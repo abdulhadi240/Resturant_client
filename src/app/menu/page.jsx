@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 
 const Page = () => {
   const [categories, setCategories] = useState([]);
-  const [selectedProduct, setSelectedProduct] = useState("DINNER");
+  const [selectedProduct, setSelectedProduct] = useState("STARTERS");
   const [productData, setProductData] = useState([]);
   const [desc, setDesc] = useState("");
 
@@ -14,7 +14,7 @@ const Page = () => {
     const fetchInitialData = async () => {
       const categoryData = await GetCategory();
       setCategories(categoryData);
-      const initialProductData = await GetProduct("DINNER");
+      const initialProductData = await GetProduct("STARTERS");
       setProductData(initialProductData);
       setDesc(initialProductData[0]?.about || "");
     };

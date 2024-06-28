@@ -4,6 +4,9 @@ import Frame_hero from "@/components/Frame_hero";
 import YouTube from "@/components/Youtube";
 import Carasoul from "@/components/Carasoul";
 import Hero_carasoul from "@/components/Hero_carasoul";
+import Service from "@/components/Services";
+import Quality from "@/components/Quality";
+import Menu from "@/components/Menu";
 
 export default function Home() {
   return (
@@ -13,20 +16,20 @@ export default function Home() {
         <Frame_hero>
           <Hero_carasoul/>
         </Frame_hero>
-        <Home_book
-          heading="BOOK  TABLE"
-          paragraph="We would love to have you as our guest!"
-          image="/seating.webp"
-          button_text="Reservation"
-          reversed={true}
-        />
-        <Home_book
-          heading="NEED A GIFT?"
-          paragraph="Looking for the perfect gift for a food lover in your life?"
-          image="/seating.webp"
-          button_text="Gift cards"
-          reversed={false}
-        />
+        
+      </div>
+      <div className="mt-20 bg-white">
+        <div className="">
+        <h1 className="flex items-center justify-center text-2xl font-semibold text-center">OUR SERVICES</h1>
+        <p className="flex items-center justify-center text-xs text-center">Our Dubai catering service, with a capacity of over 6000 meals daily, currently serves 4500+ meals to employees of various companies.</p>
+        </div>
+        <Service/>
+      </div>
+
+     
+
+      <div>
+        <Menu/>
       </div>
 
       <div className="flex justify-center mt-20 mb-10 text-3xl font-semibold tracking-widest text-center uppercase text-secondary-normal">
