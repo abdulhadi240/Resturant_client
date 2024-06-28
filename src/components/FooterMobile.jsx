@@ -21,7 +21,7 @@ const FooterMobile = () => {
 
   return (
     <motion.div
-      className='fixed bottom-0 w-full'
+      className='fixed bottom-0 z-50 w-full'
       variants={containerVariants}
       initial="hidden"
       animate="visible"
