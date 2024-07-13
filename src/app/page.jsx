@@ -1,13 +1,9 @@
-import Image from "next/image";
-import Home_book from "@/components/Home_book";
 import Frame_hero from "@/components/Frame_hero";
 import YouTube from "@/components/Youtube";
-import Carasoul from "@/components/Carasoul";
 import Hero_carasoul from "@/components/Hero_carasoul";
 import Service from "@/components/Services";
-import Quality from "@/components/Quality";
 import Menu from "@/components/Menu";
-import Feature from "@/components/feature";
+import Feature from "@/components/Feature";
 import Service1 from "@/components/Service1";
 
 export default function Home() {
