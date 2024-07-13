@@ -45,31 +45,9 @@ const menu = [
 const Frame_hero = ({ children ,Image }) => {
   return (
     <div className='z-50 overflow-hidden shadow-custom-tall'>
-      <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="z-10 justify-center hidden w-full py-2 text-xs text-center text-black lg:flex sm:text-sm">
-      Bin Haider Ware house Complex, Jabel Ali, Dubai, UAE
-
-      </motion.div>
-      <div className="w-full h-[250px] sm:h-[500px] overflow-hidden text-secondary-normal bg-transparent border-[1px] border-secondary-normal">
-        <div className="mt-2 sm:h-[480px]  overflow-hidden ml-[7px] w-[99%] relative text-secondary-normal bg-transparent border-[1px] border-secondary-normal shadow-inner-green">
-          <div className="relative hidden  z-10 lg:flex justify-between px-20 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
-          {menu.map((items, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            className={`${items.design ? "border-[1px] border-secondary-normal px-5 p-1 ml-3" : "ml-4 mt-[5px]"}`}
-          >
-            <Link
-              href={items.link}
-              className="font-semibold uppercase hover:text-secondary-dark"
-            >
-              {items.name}
-            </Link>
-          </motion.div>
-        ))}
-          </div>
-          <div className="relative w-full h-full overflow-hidden lg:-mt-16 lg:-pb-10">
+      <div className="w-full h-auto  overflow-hidden text-secondary-normal bg-transparent border-[1px] border-secondary-normal">
+        <div className="mt-2 lg:h-screen w-screen  overflow-hidden   relative text-secondary-normal bg-transparent border-[1px] border-secondary-normal shadow-inner-green">
+          <div className="relative w-full h-full overflow-hidden ">
             {children}
           </div>
         </div>

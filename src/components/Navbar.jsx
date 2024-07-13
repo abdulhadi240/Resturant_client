@@ -3,15 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
+
 export const menu = [
   {
     name: "Home",
     link: "/",
-    design: false,
-  },
-  {
-    name: "The bar",
-    link: "/bar",
     design: false,
   },
   {
@@ -31,29 +27,62 @@ export const menu = [
     link: "/location",
     design: false,
   },
+  
+]
+
+export const menuleft = [
   {
-    name: "Gallery",
-    link: "/gallery",
+    name: "Home",
+    link: "/",
     design: false,
   },
- 
+  
   {
-    name: "Reservation",
-    link: "/reservation",
-    design: true,
+    name: "Menu",
+    link: "/menu",
+    design: false,
   },
-];
+]
+export const menuright = [
+    
+  {
+    name: "About",
+    link: "/about",
+    design: false,
+  },
+  
+  {
+    name: "Need To Know",
+    link: "/location",
+    design: false,
+  },
+  
+]
 
 const Navbar = () => {
   return (
-    <div className="shadow-lg bg-primary shadow-primary">
-        <div className="flex items-center justify-between mt-2 lg:justify-center">
-            <Image src={'/logo.png'} height={150} width={150} alt="logo" className="justify-center hidden lg:flex"/>
-            
+    <div className="">
+        <div className="relative z-10 items-center justify-between hidden px-32 text-sm text-center text-black lg:flex ">
+            {menuleft.map((items, index) => (
+              <motion.div
+              key={index}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              className={`${items.design ? "border-[1px] border-secondary-normal px-5 p-1 ml-3" : "ml-4 mt-[5px]"}`}
+            >
+              <Link
+                href={items.link}
+                className="font-semibold uppercase hover:text-secondary-dark"
+              >
+                {items.name}
+              </Link>
+            </motion.div>
+            ))}
+            <div className="flex items-center justify-between mt-2 lg:justify-center">
+            <Image src={'/logo.webp'} height={80} width={80} alt="logo" className="justify-center hidden lg:flex"/>
         </div>
-       
-        <div className="relative hidden  z-10 lg:flex justify-between px-6 py-4  text-secondary-normal bg-gradient-to-b from-[#014137] to-[#0141370d] shadow-custom-tall">
-            {menu.map((items, index) => (
+        {menuright.map((items, index) => (
               <motion.div
               key={index}
               initial={{ opacity: 0, y: -20 }}

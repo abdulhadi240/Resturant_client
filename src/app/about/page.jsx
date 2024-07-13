@@ -8,10 +8,10 @@ const page = () => {
       <img src="/about.webp" className="object-cover w-full h-full" alt=""/>
       </Frame_hero>
       <div>
-        <span className="flex justify-center mt-10 text-lg font-bold text-secondary-normal">
-          WELCOME TO LAZIZ CATERING
-        </span>
-        <p className="items-center px-5 mt-10 tracking-wider text-center sm:px-10 lg:px-20 text-secondary-normal">
+      <h1 className="mt-10 text-3xl font-bold tracking-widest text-center text-black">
+        WELCOME TO <span className="text-red-500">LAZIZ CATERING</span>
+        </h1>
+        <p className="items-center px-5 mt-10 tracking-wider text-center text-black sm:px-10 lg:px-20">
           Welcome to Laziz Catering, your premier partner for exceptional
           culinary experiences in the heart of Dubai. We are dedicated to
           creating extraordinary events, whether intimate gatherings, lavish
@@ -26,10 +26,10 @@ const page = () => {
         </p>
       </div>
       <div>
-        <h1 className="mt-10 text-6xl font-bold tracking-widest text-center text-secondary-normal">
-        MEET THE TEAM
+        <h1 className="mt-10 text-6xl font-bold tracking-widest text-center text-black">
+        MEET <span className="text-red-500">THE TEAM</span>
         </h1>
-        <p className="mt-3 text-xs text-center text-secondary-normal">Our dynamic team ensures every client's vision becomes a reality with precision and warm hospitality.</p>
+        <p className="mt-3 text-xs text-center text-black">Our dynamic team ensures every client's vision becomes a reality with precision and warm hospitality.</p>
 
       </div>
     </div>

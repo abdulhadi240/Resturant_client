@@ -3,7 +3,7 @@ import "./globals.css";
 import FooterMobile from "@/components/FooterMobile";
 import { Footer } from "@/components/Footer";
 import MobileMenu from '@/components/MobileMenu';
-import { menu } from '@/components/Navbar';
+import Navbar, { menu } from '@/components/Navbar';
 const inter = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,10 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <div>
-
-      </div>
       <body className={inter.className}>
+        <Navbar/>
       <MobileMenu menu={menu}/>
         {children}</body>
       <div className="mt-64">

@@ -54,6 +54,14 @@ export const menu = {
                       title: 'Number',
                       type: 'string',
                     },
+                    {
+                      title: 'Poster',
+                      name: 'poster',
+                      type: 'image',
+                      options: {
+                        hotspot: true // <-- Defaults to false
+                      },
+                    }
                     
                   ],
                 },

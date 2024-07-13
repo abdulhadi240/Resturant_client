@@ -5,15 +5,13 @@ import dynamic from "next/dynamic";
 const page = () => {
   return (
     <>
-      <div>
-        <Navbar />
-      </div>
+      
       <div className="flex flex-col justify-between mx-5 mt-20 lg:mx-10 lg:flex-row text-secondary-normal">
         <div className="text-center text-secondary-normal ">
-          <h1 className="mb-4 text-4xl font-bold text-secondary-normal">
-            HOURS & LOCATION
+          <h1 className="mb-4 text-4xl font-bold text-black">
+            HOURS <span className="px-1 text-red-500">&</span> LOCATION
           </h1>
-          <p>
+          <p className="text-black">
             Bin Haider Ware house Complex,
             <br />
             Ware house No.12 <br /> Dubai Investment Park2 <br /> Jabel Ali,
@@ -30,7 +28,7 @@ const page = () => {
             5:00 - 10:30pm
           </p>
         </div>
-        <div className="lg:w-[600px] flex justify-center text-center">
+        <div className="lg:w-[600px] flex justify-center text-center text-black mt-6">
           <p>
             <span className="font-semibold text-secondary-dark">
             VISION:

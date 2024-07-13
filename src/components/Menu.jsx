@@ -6,8 +6,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 const Menu = () => {
   return (
     <section className="p-8 bg-white">
-      <span className="block mb-4 text-xl font-medium text-center">
-        TOP RATED
+      <span className="block mb-4 text-2xl font-bold text-center">
+        FAMOUS <span className="text-red-500">PRODUCTS</span>
       </span>
       <div className="grid max-w-4xl grid-cols-1 gap-4 mx-auto sm:grid-cols-2 lg:grid-cols-3">
         <Card

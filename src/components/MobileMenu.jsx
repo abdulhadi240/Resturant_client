@@ -15,15 +15,15 @@ const MobileMenu = ({ menu }) => {
 
   return (
     <div className="lg:hidden">
-      <Image src={'/logo.png'} height={150} width={150} alt="logo"/>
-      <button className="fixed z-50 top-4 right-4" onClick={toggleMenu}>
+      <Image src={'/logo.webp'} height={100} width={100} alt="logo"/>
+      <button className="fixed z-50 items-center top-4 right-4" onClick={toggleMenu}>
         {isOpen ? (
           <div className="border-[1px] border-white p-3 rounded-sm">
-            <FiAlignRight color="white" size={40} />
+            <FiAlignRight color="red" size={40} />
           </div>
         ) : (
           <div className="">
-            <FiAlignJustify color="#E4CDB4" size={40} />
+            <FiAlignJustify color="red" size={40} />
           </div>
         )}
       </button>

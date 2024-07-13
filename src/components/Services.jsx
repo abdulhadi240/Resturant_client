@@ -68,7 +68,7 @@ const Card = ({ heading, description, imgSrc }) => {
           backgroundPosition: "center",
         }}
       />
-      <div className="relative z-20 flex flex-col justify-between h-full p-4 transition-colors duration-500 text-slate-300 group-hover:text-white">
+      <div className="relative z-20 flex flex-col justify-between h-full p-4 text-white transition-colors duration-500 group-hover:text-white">
         <FiArrowRight className="ml-auto text-3xl transition-transform duration-500 group-hover:-rotate-45" />
         <div>
           <h4>

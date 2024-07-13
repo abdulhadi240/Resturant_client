@@ -13,7 +13,15 @@ export const GetProduct = async (slug) => {
    
     const query = `*[_type == 'menu' && title == '${slug}']`;
     const products = await client.fetch(query);
-    console.log(query);
+    console.log(products);
+    return products
+  }
+
+  export const GetFamous = async () => {
+   
+    const query = `*[_type == 'famous']`;
+    const products = await client.fetch(query);
+    console.log(products);
     return products
   }
 
@@ -21,7 +29,7 @@ export const GetProduct = async (slug) => {
    
     const query = `*[_type == 'menu']`;
     const products = await client.fetch(query);
-    console.log(query);
+    console.log(products);
     return products
   }
 
