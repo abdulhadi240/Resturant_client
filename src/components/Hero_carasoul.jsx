@@ -5,7 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Hero_carasoul = () => {
   return (
-    <div className="relative text-white text-[20px] w-full max-w-[1660px] ">
+    <div className=" absolute top-0 text-white text-[20px] w-full max-w-[1660px] h-screen ">
          <Carousel
              autoPlay={true}
              infiniteLoop={true}
@@ -15,42 +15,27 @@ const Hero_carasoul = () => {
              showArrows={false}
              
          >
+             
              <div>
                  <img
-                     src="/p1.webp"
-                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
+                     src="/0.webp"
+                     className="aspect-[16/10] md:aspect-auto object-fill sm:object-cover h-screen w-screen"
                      alt='image'
                  />
                  
              </div>
              <div>
                  <img
-                     src="/indian.jpg"
-                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
+                     src="/1.webp"
+                     className="aspect-[16/10] md:aspect-auto object-fill sm:object-contain h-full w-full"
                      alt='image'
                  />
                  
              </div>
              <div>
                  <img
-                     src="/biryani.jpg"
-                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
-                     alt='image'
-                 />
-                 
-             </div>
-             <div>
-                 <img
-                     src="/indian.jpg"
-                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
-                     alt='image'
-                 />
-                 
-             </div>
-             <div>
-                 <img
-                     src="/i1.jpeg"
-                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
+                     src="/2.webp"
+                     className="aspect-[16/10] md:aspect-auto object-fill sm:object-contain h-full w-full"
                      alt='image'
                  />
                  
@@ -58,8 +43,8 @@ const Hero_carasoul = () => {
 
              <div>
                  <img
-                     src="/bbq.avif"
-                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
+                     src="/3.webp"
+                     className="aspect-[16/10] md:aspect-auto object-fill sm:object-contain h-full w-full"
                      alt='image'
                  />
                  
@@ -67,8 +52,16 @@ const Hero_carasoul = () => {
 
              <div>
                  <img
-                     src="/pilau.jfif"
-                     className="aspect-[16/10] md:aspect-auto object-contain h-full w-full"
+                     src="/4.webp"
+                     className="aspect-[16/10] md:aspect-auto object-fill sm:object-contain h-full w-full"
+                     alt='image'
+                 />
+                 
+             </div>
+             <div>
+                 <img
+                     src="/5.webp"
+                     className="aspect-[16/10] md:aspect-auto object-fill sm:object-contain h-full w-full"
                      alt='image'
                  />
                  

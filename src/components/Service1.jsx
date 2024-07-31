@@ -3,7 +3,7 @@ import React from 'react'
 import { cn } from '@/lib/utils'
 const Service1 = ({image , title,desc,check}) => {
   return (
-    <div className='flex flex-col gap-2 max-w-56 '>
+    <div className='flex-col hidden gap-2 sm:flex max-w-56'>
         <div className={cn('flex text-center justify-center sm:text-start',{'sm:mr-6 sm:justify-end':check})}>
         <Image src={image} height={50} width={50} alt='icons'/>
         </div>

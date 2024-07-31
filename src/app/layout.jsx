@@ -1,9 +1,5 @@
 import { Space_Grotesk } from '@next/font/google';
 import "./globals.css";
-import FooterMobile from "@/components/FooterMobile";
-import { Footer } from "@/components/Footer";
-import MobileMenu from '@/components/MobileMenu';
-import Navbar, { menu } from '@/components/Navbar';
 const inter = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
@@ -15,13 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
-      <MobileMenu menu={menu}/>
         {children}</body>
-      <div className="mt-64">
-      <FooterMobile/>
       
-      </div>
     </html>
   );
 }

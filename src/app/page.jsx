@@ -5,13 +5,18 @@ import Service from "@/components/Services";
 import Menu from "@/components/Menu";
 import Feature from "@/components/Feature";
 import Service1 from "@/components/Service1";
+import { CountUpStats } from "@/components/Count";
+import BasicFAQ from "@/components/FAQ";
+import { Example } from "@/components/Navbar1";
 
 export default function Home() {
   return (
     <>
       <div className="">
         <Frame_hero>
+          <Example />
           <Hero_carasoul />
+          <Example />
         </Frame_hero>
       </div>
       <div className="relative bg-black sm:bg-transparent">
@@ -67,6 +72,9 @@ export default function Home() {
       </div>
       <div className="">
         <Menu />
+      </div>
+      <div>
+        <CountUpStats />
       </div>
       <div className="flex flex-col justify-center mt-20 overflow-hidden sm:gap-6 lg:gap-10 sm:flex-row">
         <div className="flex flex-row justify-between sm:justify-center sm:gap-6 lg:gap-10 sm:flex-col ">
@@ -132,8 +140,8 @@ export default function Home() {
       <div className="flex justify-center mt-20 mb-10 text-3xl font-semibold tracking-widest text-center uppercase text-secondary-normal">
         <h1>FOLLOW US ON INSTAGRAM</h1>
       </div>
-      <div className="">
-        <YouTube url="https://www.youtube.com/watch?v=LQdfE66rAwc" />
+      <div>
+        <BasicFAQ />
       </div>
     </>
   );
