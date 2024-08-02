@@ -8,6 +8,8 @@ import Service1 from "@/components/Service1";
 import { CountUpStats } from "@/components/Count";
 import BasicFAQ from "@/components/FAQ";
 import { Example } from "@/components/Navbar1";
+import groovyWalkAnimation from "@/components/animate/animation1.json";
+import groovyWalkAnimation1 from "@/components/animate/animate2.json";
 
 export default function Home() {
   return (
@@ -27,28 +29,28 @@ export default function Home() {
         <div className="inset-0 z-10 flex items-center justify-center sm:absolute">
           <div className="grid grid-cols-1 gap-6 p-6 sm:p-0 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
             <Feature
-              image={"/cutlery.png"}
+              image={groovyWalkAnimation}
               title={"Fresh Ingredients"}
               para={
                 "We use fresh ingredients cultivated from farms which are directly supplied to us."
               }
             />
             <Feature
-              image={"/chefs.png"}
+              image={groovyWalkAnimation}
               title={"Top Chefs"}
               para={
                 "We use fresh ingredients cultivated from farms which are directly supplied to us."
               }
             />
             <Feature
-              image={"/salt-pot.png"}
+              image={groovyWalkAnimation1}
               title={"Attractive Flavours"}
               para={
                 "We use fresh ingredients cultivated from farms which are directly supplied to us."
               }
             />
             <Feature
-              image={"/medal.png"}
+              image={groovyWalkAnimation1}
               title={"Professional Chefs"}
               para={
                 "We use fresh ingredients cultivated from farms which are directly supplied to us."

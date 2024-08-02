@@ -272,13 +272,13 @@ const HAMBURGER_VARIANTS = {
   },
   bottom: {
     open: {
-      rotate: ["0deg", "0deg", "45deg"],
+      rotate: ["0deg", "0deg", "0deg"],
       bottom: ["35%", "50%", "50%"],
       left: "50%",
     },
     closed: {
-      rotate: ["45deg", "0deg", "0deg"],
-      bottom: ["50%", "50%", "35%"],
+      rotate: ["0deg", "0deg", "0deg"],
+      bottom: ["80%", "50%", "35%"],
       left: "calc(50% + 10px)",
     },
   },

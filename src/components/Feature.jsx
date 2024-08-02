@@ -1,13 +1,18 @@
+'use client'
 import Image from "next/image";
 import React from "react";
+import Lottie from "lottie-react";
 
 const Feature = ({image , title , para }) => {
+  const style = {
+    height: 150,
+    width:150
+  };
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-1">
       <div className="flex items-center justify-center text-center">
-        <Image src={image} height={50} width={50} alt="icons"/>
-      </div>
-      <div className="flex items-center justify-center text-lg font-bold text-center text-white">
+      <Lottie animationData={image} loop={true} style={style}/>      </div>
+      <div className="flex items-center justify-center -mt-6 text-lg font-bold text-center text-white">
         {title}
       </div>
       <div className="flex items-center justify-center text-sm text-center text-white w-44">
