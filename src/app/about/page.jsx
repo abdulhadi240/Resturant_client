@@ -1,9 +1,17 @@
 import Frame_hero from "@/components/Frame_hero";
+import Hero_carasoul from "@/components/Hero_carasoul";
+import { Example } from "@/components/Navbar1";
 import React from "react";
 
 const page = () => {
   return (
     <div>
+      <div className="">
+        <Frame_hero>
+          <Example />
+          <Example />
+        </Frame_hero>
+      </div>
       <Frame_hero image={"/about.webp"}>
       <img src="/about.webp" className="object-cover w-full h-full" alt=""/>
       </Frame_hero>

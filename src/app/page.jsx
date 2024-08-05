@@ -10,6 +10,10 @@ import BasicFAQ from "@/components/FAQ";
 import { Example } from "@/components/Navbar1";
 import groovyWalkAnimation from "@/components/animate/animation1.json";
 import groovyWalkAnimation1 from "@/components/animate/animate2.json";
+import groovyWalkAnimation2 from "@/components/animate/animate3.json";
+import Opening from "@/components/Opening";
+import { Hero } from "@/components/Hero";
+import { Usps } from "@/components/Usps";
 
 export default function Home() {
   return (
@@ -50,8 +54,8 @@ export default function Home() {
               }
             />
             <Feature
-              image={groovyWalkAnimation1}
-              title={"Professional Chefs"}
+              image={groovyWalkAnimation2}
+              title={"Delicious Food"}
               para={
                 "We use fresh ingredients cultivated from farms which are directly supplied to us."
               }
@@ -61,7 +65,7 @@ export default function Home() {
       </div>
       <div className="mt-20 bg-white">
         <div className="">
-          <h1 className="flex items-center justify-center text-2xl font-semibold text-center text-red-500">
+          <h1 className="flex items-center justify-center text-3xl font-semibold text-center text-red-500">
             <span className="px-1 text-black">OUR</span> SERVICES
           </h1>
           <p className="flex items-center justify-center text-xs text-center">
@@ -75,9 +79,14 @@ export default function Home() {
       <div className="">
         <Menu />
       </div>
+      <div className="relative z-10 mt-32 bg-black">
+          <Hero />
+          <Usps />
+        </div>
       <div>
         <CountUpStats />
       </div>
+      
       <div className="flex flex-col justify-center mt-20 overflow-hidden sm:gap-6 lg:gap-10 sm:flex-row">
         <div className="flex flex-row justify-between sm:justify-center sm:gap-6 lg:gap-10 sm:flex-col ">
           <Service1

@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import { GetCategory, GetProduct } from "@/components/Datafetching";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
+import Frame_hero from "@/components/Frame_hero";
+import { Example } from "@/components/Navbar1";
+import Hero_carasoul from "@/components/Hero_carasoul";
 
 const Page = () => {
   const [categories, setCategories] = useState([]);
@@ -32,7 +35,12 @@ const Page = () => {
 
   return (
     <>
-      
+    <div className="">
+        <Frame_hero>
+          <Example />
+          <Example />
+        </Frame_hero>
+      </div>
       <div className="flex justify-center mx-6 mt-20 lg:mx-28">
         <div className="flex flex-col justify-center text-center">
           <div className="grid justify-center grid-cols-3 gap-4 text-center lg:gap-10 sm:grid-cols-4 lg:grid-cols-5">

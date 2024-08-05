@@ -1,5 +1,6 @@
 'use client'
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 const Service = () => {
@@ -52,10 +53,17 @@ const Service = () => {
 };
 
 const Card = ({ heading, description, imgSrc }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <motion.div
+      ref={ref}
+      initial={{ opacity: 0 }}
+      whileInView={{opacity:1 , animationDuration:2}}
       transition={{
-        staggerChildren: 0.035,
+        duration: 0.5,
+        ease: "easeInOut"
       }}
       whileHover="hover"
       className="relative w-full h-64 overflow-hidden cursor-pointer bg-slate-300 group"

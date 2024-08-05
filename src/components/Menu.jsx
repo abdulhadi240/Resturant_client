@@ -6,9 +6,14 @@ import { FiArrowUpRight } from "react-icons/fi";
 const Menu = () => {
   return (
     <section className="p-8 bg-white">
-      <span className="block mb-4 text-2xl font-bold text-center">
-        FAMOUS <span className="text-red-500">PRODUCTS</span>
-      </span>
+     <div className="mb-10">
+          <h1 className="flex items-center justify-center text-3xl font-semibold text-center text-red-500">
+            <span className="px-1 text-black">TOP</span> RATED
+          </h1>
+          <p className="flex items-center justify-center text-xs text-center">
+          These exceptional and uniquely flavored offerings have become staples that patrons look forward to enjoying time and again.
+          </p>
+        </div>
       <div className="grid max-w-4xl grid-cols-1 gap-4 mx-auto sm:grid-cols-2 lg:grid-cols-3">
         <Card
           title="Biryani"

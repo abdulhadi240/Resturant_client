@@ -1,9 +1,16 @@
-'use client'
-import React from "react";
-import Lottie from "lottie-react";
-import groovyWalkAnimation from "@/components/animate/animation1.json";
+import { Hero } from "@/components/Hero";
+import { Usps } from "@/components/Usps";
 const page = () => {
-  return <Lottie animationData={groovyWalkAnimation} loop={true} />;
+  return (
+    <>
+      <main>
+        <div className="relative z-10 bg-black">
+          <Hero />
+          <Usps />
+        </div>
+      </main>
+    </>
+  );
 };
 
 export default page;
