@@ -21,7 +21,9 @@ export default function Home() {
       <div className="">
         <Frame_hero>
           <Example />
+          <div className="hidden sm:block">
           <Hero_carasoul />
+          </div>
           <Example />
         </Frame_hero>
       </div>
