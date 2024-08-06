@@ -5,24 +5,22 @@ import { animate, useInView } from "framer-motion";
 export const CountUpStats = () => {
   return (
     <div className="max-w-3xl px-4 py-20 mx-auto md:py-24">
-      <div className="flex flex-col items-center justify-center sm:flex-row">
+      <div className="flex flex-col items-center justify-center gap-10 sm:flex-row">
         <Stat
-          num={45}
-          suffix="%"
-          subheading="Lorem ipsum dolor sit amet consectetur"
+          num={15}
+          suffix="+"
+          subheading="Experience"
         />
-        <div className="h-[1px] w-12 bg-indigo-200 sm:h-12 sm:w-[1px]" />
         <Stat
           num={15.5}
           decimals={1}
           suffix="K+"
-          subheading="Lorem ipsum dolor sit amet consectetur"
+          subheading="Meals/day"
         />
-        <div className="h-[1px] w-12 bg-indigo-200 sm:h-12 sm:w-[1px]" />
         <Stat
-          num={20}
-          suffix="B+"
-          subheading="Lorem ipsum dolor sit amet consectetur"
+          num={100}
+          suffix="+"
+          subheading="Clients"
         />
       </div>
     </div>

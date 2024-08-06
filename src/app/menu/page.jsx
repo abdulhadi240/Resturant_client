@@ -38,6 +38,17 @@ const Page = () => {
     <div className="">
         <Frame_hero>
           <Example />
+          <div className="relative">
+            <img src="/about3.png" alt="bg" className="hidden w-screen h-[500px] sm:block" />
+            <img src="/aboutmob1.png" alt="bg" className="w-screen h-[500px] sm:hidden" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h1 className="relative z-10 text-5xl font-bold text-white sm:text-6xl" style={{ marginTop: '-200px' }}>
+                <span className="before:block before:absolute before:left-[-60px] before:top-[50%] before:h-[2px] before:w-[50px] before:bg-white after:block after:absolute after:right-[-60px] after:top-[50%] after:h-[2px] after:w-[50px] after:bg-white">
+                  <span className="text-red-500">MENU</span>
+                </span>
+              </h1>
+            </div>
+          </div>
           <Example />
         </Frame_hero>
       </div>

@@ -1,11 +1,29 @@
 import Navbar from "@/components/Navbar";
 import React from "react";
 import dynamic from "next/dynamic";
+import Frame_hero from "@/components/Frame_hero";
+import { Example } from "@/components/Navbar1";
 
 const page = () => {
   return (
     <>
-      
+    <div className="">
+        <Frame_hero>
+          <Example />
+          <div className="relative">
+            <img src="/about3.png" alt="bg" className="hidden w-screen h-[500px] sm:block" />
+            <img src="/aboutmob1.png" alt="bg" className="w-screen h-[500px] sm:hidden" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h1 className="relative z-10 text-5xl font-bold text-white sm:text-6xl" style={{ marginTop: '-200px' }}>
+                <span className="before:block before:absolute before:left-[-60px] before:top-[50%] before:h-[2px] before:w-[50px] before:bg-red-500 after:block after:absolute after:right-[-60px] after:top-[50%] after:h-[2px] after:w-[50px] after:bg-red-500">
+                  CONTACT <span className="text-red-500">US</span>
+                </span>
+              </h1>
+            </div>
+          </div>
+          <Example />
+        </Frame_hero>
+      </div>
       <div className="flex flex-col justify-between mx-5 mt-20 lg:mx-10 lg:flex-row text-secondary-normal">
         <div className="text-center text-secondary-normal ">
           <h1 className="mb-4 text-4xl font-bold text-black">

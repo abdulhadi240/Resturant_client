@@ -85,9 +85,7 @@ export default function Home() {
           <Hero />
           <Usps />
         </div>
-      <div>
-        <CountUpStats />
-      </div>
+      
       
       <div className="flex flex-col justify-center mt-20 overflow-hidden sm:gap-6 lg:gap-10 sm:flex-row">
         <div className="flex flex-row justify-between sm:justify-center sm:gap-6 lg:gap-10 sm:flex-col ">
