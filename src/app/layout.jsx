@@ -1,5 +1,6 @@
 import { Space_Grotesk } from '@next/font/google';
 import "./globals.css";
+import FooterMobile from '@/components/FooterMobile';
 const inter = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {children}</body>
+        <FooterMobile/>
       
     </html>
   );

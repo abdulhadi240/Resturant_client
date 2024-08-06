@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
+import Link from "next/link";
 
 const menu = [
   {
@@ -38,7 +39,7 @@ export const Example = ({children}) => {
         <Nav />
         </div>
         <div className="absolute top-0 z-9999">
-            <Image src={'/logo.webp'} height={120} width={120} alt="logo"/>
+            <Link href={'/'}><Image src={'/logo.webp'} height={120} width={120} alt="logo"/></Link>
         </div>
         </div>
         <div className="absolute top-0">
@@ -132,15 +133,15 @@ const HamburgerButton = ({ active, setActive }) => {
         initial={false}
         animate={active ? "open" : "closed"}
         variants={UNDERLAY_VARIANTS}
-        style={{ top: 16, right: 16 }}
-        className="fixed z-10 rounded-xl bg-gradient-to-br from-red-700 to-red-500 shadow-red-500/50"
+        style={{ top: 26, right: 16 }}
+        className="fixed z-10 top-7 rounded-xl bg-gradient-to-br from-red-700 to-red-500 shadow-red-500/50"
       />
 
       <motion.button
         initial={false}
         animate={active ? "open" : "closed"}
         onClick={() => setActive((pv) => !pv)}
-        className={`group fixed right-4 top-4 z-50 h-16 w-16  transition-all hover:bg-white/20 ${
+        className={`group fixed right-4 top-7 z-50 h-16 w-16  transition-all hover:bg-white/20 ${
           active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
         }`}
       >
