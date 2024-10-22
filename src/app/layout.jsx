@@ -1,6 +1,7 @@
 import { Space_Grotesk } from '@next/font/google';
 import "./globals.css";
 import FooterMobile from '@/components/FooterMobile';
+import VoiceflowChat from '@/components/VoiceflowChat';
 const inter = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,7 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}</body>
+        {children}
+        <VoiceflowChat/>
+        </body>
         <FooterMobile/>
       
     </html>
