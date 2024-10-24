@@ -15,7 +15,9 @@ import Opening from "@/components/Opening";
 import { Hero } from "@/components/Hero";
 import { Usps } from "@/components/Usps";
 
-export default function Home() {
+export default async function Home() {
+  const response = await fetch('https://fake-menu.onrender.com/')
+  const response1 = await fetch('https://chat-bot-template.onrender.com/')
   return (
     <>
       <div className="">
